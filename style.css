@@ -360,3 +360,97 @@ footer {
     font-size: 0.95rem;
     margin-bottom: 1.2rem;
 }
+
+/* --- Contact --- */
+
+.contact-section {
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    color: var(--text-light);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.required {
+    color: #f85149;
+    margin-left: 0.2rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    background-color: var(--primary-color);
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    color: var(--text-light);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group select option {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 1px;
+    border-color: var(--accent-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.checkbox-group {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.8rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top: 0.2rem;
+    accent-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    cursor: pointer;
+    line-height: 1.4;
+}
+
+.contact-section .btn-primary {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1.05rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+}
