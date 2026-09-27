@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="IAscope - Annuaire et sélection des meilleurs outils d'Intelligence Artificielle.">
+    <title>Outils I.A. | IAscope</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">IA<span>scope</span></div>
+        <nav aria-label="Navigation principale">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#actualites">Actualités</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container">
+        <section class="page-header">
+            <h1>Annuaire des Outils I.A.</h1>
+            <p>Explorez et filtrez les meilleures solutions d'Intelligence Artificielle par catégorie.</p>
+        </section>
+        <section class="filters-section">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Rechercher un outil (ex: ChatGPT, Midjourney...)"
+                    aria-label="Rechercher un outil">
+            </div>
+            <div class="filter-buttons" id="filter-buttons">
+                <button class="filter-btn active" data-category="all">Tous</button>
+                <button class="filter-btn" data-category="texte">Texte & Rédaction</button>
+                <button class="filter-btn" data-category="image">Génération d'Image</button>
+                <button class="filter-btn" data-category="code">Développement & Code</button>
+                <button class="filter-btn" data-category="audio">Audio & Voix</button>
+            </div>
+        </section>
+        <section class="tools-grid" id="tools-grid">
+
+            <!-- Outil 1 -->
+            <article class="tool-card" data-category="texte">
+                <div class="tool-badge">Texte</div>
+                <h3>ChatGPT</h3>
+                <p>Agent conversationnel et assistant polyvalent basé sur les modèles GPT d'OpenAI.</p>
+                <div class="tool-footer">
+                    <span class="pricing freemium">Freemium</span>
+                    <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" class="btn-link">Découvrir
+                        &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Outil 2 -->
+            <article class="tool-card" data-category="image">
+                <div class="tool-badge">Image</div>
+                <h3>Midjourney</h3>
+                <p>Générateur d'images haute définition à partir de descriptions textuelles (prompts).</p>
+                <div class="tool-footer">
+                    <span class="pricing payant">Payant</span>
+                    <a href="https://www.midjourney.com" target="_blank" rel="noopener noreferrer"
+                        class="btn-link">Découvrir
+                        &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Outil 3 -->
+            <article class="tool-card" data-category="code">
+                <div class="tool-badge">Code</div>
+                <h3>GitHub Copilot</h3>
+                <p>Assistant de programmation qui suggère du code en temps réel dans votre éditeur.</p>
+                <div class="tool-footer">
+                    <span class="pricing payant">Payant</span>
+                    <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer"
+                        class="btn-link">Découvrir &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Outil 4 -->
+            <article class="tool-card" data-category="texte">
+                <div class="tool-badge">Texte</div>
+                <h3>Claude</h3>
+                <p>Modèle de langage développé par Anthropic, réputé pour sa précision et ses capacités d'analyse.</p>
+                <div class="tool-footer">
+                    <span class="pricing freemium">Freemium</span>
+                    <a href="https://claude.ai" target="_blank" rel="noopener noreferrer" class="btn-link">Découvrir
+                        &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Outil 5 -->
+            <article class="tool-card" data-category="audio">
+                <div class="tool-badge">Audio</div>
+                <h3>ElevenLabs</h3>
+                <p>Plateforme de synthèse vocale IA offrant des voix hyper-réalistes et le clonage vocal.</p>
+                <div class="tool-footer">
+                    <span class="pricing freemium">Freemium</span>
+                    <a href="https://elevenlabs.io" target="_blank" rel="noopener noreferrer" class="btn-link">Découvrir
+                        &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Outil 6 -->
+            <article class="tool-card" data-category="image">
+                <div class="tool-badge">Image</div>
+                <h3>Leonardo.Ai</h3>
+                <p>Suite créative alimentée par l'I.A. pour générer des assets visuels et des illustrations 2D/3D.</p>
+                <div class="tool-footer">
+                    <span class="pricing freemium">Freemium</span>
+                    <a href="https://leonardo.ai" target="_blank" rel="noopener noreferrer" class="btn-link">Découvrir
+                        &rarr;</a>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 IAscope. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>

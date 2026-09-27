@@ -73,19 +73,19 @@ nav a:hover {
     margin: 0 auto 2rem auto;
 }
 
-button {
+.btn-primary {
+    display: inline-block;
     background-color: var(--accent-color);
     color: #000;
-    border: none;
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 6px;
-    cursor: pointer;
+    text-decoration: none;
     transition: opacity 0.3s;
 }
 
-button:hover {
+.btn-primary:hover {
     opacity: 0.9;
 }
 
@@ -125,4 +125,155 @@ footer {
     border-top: 1px solid #30363d;
     margin-top: 3rem;
     font-size: 0.9rem;
+}
+
+/* --- Page outils --- */
+.main-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.page-header h1 {
+    color: var(--text-light);
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.filters-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.9rem 1.2rem;
+    background-color: var(--secondary-color);
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    color: var(--text-light);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: var(--accent-color);
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+.filter-btn {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: 1px solid #30363d;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--accent-color);
+    color: #000;
+    border-color: var(--accent-color);
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.tool-card {
+    background-color: var(--secondary-color);
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-color);
+}
+
+.tool-badge {
+    align-self: flex-start;
+    background-color: rgba(88, 166, 255, 0.15);
+    color: var(--accent-color);
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+}
+
+.tool-card h3 {
+    color: var(--text-light);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.tool-card p {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.tool-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #30363d;
+    padding-top: 1rem;
+}
+
+.pricing {
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+.pricing.freemium {
+    background-color: rgba(46, 160, 67, 0.2);
+    color: #3fb950;
+}
+
+.pricing.payant {
+    background-color: rgba(210, 153, 34, 0.2);
+    color: #d29922;
+}
+
+.btn-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
 }
